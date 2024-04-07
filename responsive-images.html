@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <img style="width: 100%" src="mountains-small.jpg" alt="mountains"/> -->
+    <img
+      style="width: 50%"
+      src="mountains-small.jpg"
+      sizes="50vw"
+      srcset="
+        mountains-small.jpg   500w,
+        mountains-medium.jpg  768w,
+        mountains-big.jpg    1200w
+      "
+    />
+    <!-- <img
+      style="width: 100%"
+      src="mountains-small.jpg"
+      srcset="
+        mountains-small.jpg,
+        mountains-medium.jpg 2x,
+        mountains-big.jpg    3x
+      "
+    /> -->
+    <!-- <picture>
+      <source media="(max-width: 500px)" srcset="mountains-small.jpg" />
+      <source media="(max-width: 768px)" srcset="mountains-medium.jpg" />
+      <img style="width: 100%" src="mountains-big.jpg" alt="Mountains" />
+    </picture> -->
+  </body>
+</html>
